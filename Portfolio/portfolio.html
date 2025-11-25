@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/portfoliostyling.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+ <script src="js/portfoliojs.js" defer></script>
+
+</head>
+<body>
+
+  <nav>
+    <button onclick="scrollToSection('hero')">Home</button>
+    <button onclick="scrollToSection('projects')">Projects</button>
+    <button onclick="scrollToSection('about')">About Me</button>
+  </nav>
+
+  <div class="content">
+    <section id="hero" class="section hero">
+      <h1>Aasees Raina</h1>
+      <p>Short description about who you are and what you do. Clean, clear, friendly intro.</p>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>My Work</h2>
+
+      <div class="projects-list">
+
+        <div class="project-card">
+          <img src="" alt="Project Image" class="project-img">
+          <div class="project-desc">Short description of the project goes here.</div>
+          <div class="tags">
+            <div class="tag">UI</div>
+            <div class="tag">JavaScript</div>
+            <div class="tag">Design</div>
+          </div>
+          <button class="project-btn" onclick="location.href='Project1.html'">View Project</button>
+        </div>
+
+        <div class="project-card">
+          <img src="" alt="Project Image" class="project-img">
+          <div class="project-desc">Another cool project description.</div>
+          <div class="tags">
+            <div class="tag">School</div>
+            <div class="tag">UX</div>
+          </div>
+          <button class="project-btn" onclick="location.href='project2.html'">View Project</button>
+        </div>
+
+        <div class="project-card">
+          <img src="" alt="Project Image" class="project-img">
+          <div class="project-desc">A personal or case study project.</div>
+          <div class="tags">
+            <div class="tag">Case Study</div>
+            <div class="tag">Research</div>
+          </div>
+          <button class="project-btn" onclick="location.href='project3.html'">View Project</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>Write something about yourself here. Add your bio, interests, background, and what you love working on.</p>
+    </section>
+
+    <footer id="footer">
+      <p>Contact Me</p>
+      <div class="socials">
+        <a href="#">Email</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+    <div id="cursor"></div>
+
+  </div>
+</body>
+</html>
