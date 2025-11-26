@@ -5,80 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project 1</title>
   <link rel="stylesheet" href="css/portfoliostyling.css">
+  <link rel="stylesheet" href="css/projectstyling.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
   <script src="js/portfoliojs.js" defer></script>
-
-  <style>
-    .project-container {
-      max-width: 900px;
-      margin: 80px auto;
-      background: #f8f3e7;
-      border: 1px solid #000;
-      border-radius: 20px;
-      padding: 50px;
-      box-shadow: 3px 3px 0 #000;
-    }
-
-    .project-container h1 {
-      font-size: 45px;
-      margin-bottom: 20px;
-    }
-
-    .project-container p {
-      font-size: 20px;
-      line-height: 1.7;
-      margin-bottom: 25px;
-    }
-
-    .project-img-large {
-      width: 100%;
-      height: 350px;
-      border: 1px solid #000;
-      border-radius: 14px;
-      object-fit: cover;
-      margin-bottom: 30px;
-      background: #ddd;
-    }
-
-    .back-btn {
-      padding: 12px 18px;
-      background: #f8f3e7;
-      border: 2px solid #000;
-      border-radius: 10px;
-      box-shadow: 3px 3px 0 #000;
-      text-decoration: none;
-      color: #000;
-      font-size: 18px;
-      transition: 0.15s ease;
-    }
-
-    .back-btn:hover {
-      transform: translate(3px, 3px);
-      box-shadow: 0 0 0 #000;
-    }
-  </style>
 </head>
 
 <body>
-  <div id="cursor"></div>
 
-  <div class="project-container">
-    <img src="images/project1.jpg" class="project-img-large" alt="Project 1 Image">
-    <h1>Project Title</h1>
-    <p>
-      This is where the full project description goes. Explain your role,
-      the goals, process, tools used, challenges, and results.
-    </p>
+  <nav>
+    <button onclick="location.href='index.html#hero'">Home</button>
+    <button onclick="location.href='index.html#projects'">Projects</button>
+    <button onclick="location.href='index.html#about'">About Me</button>
+  </nav>
 
-    <p>
-      Add additional context, extra images, or breakdown sections.  
-      This page is meant to expand and tell the full story behind your work.
-    </p>
+  <div class="content">
+    <div class="project-container">
 
-    <a href="portfolio.html" class="back-btn">← Back to Portfolio</a>
+      <h1>Reimagining the MOV Galleries: Community Perspectives</h1>
+      <img src="img/project1-img.png" class="project-img-large" alt="Project 1 Image">
+
+      <div class="project-info">
+        <div>
+          <h3>Duration</h3>
+          <p>7 Weeks</p>
+        </div>
+        <div>
+          <h3>My Role</h3>
+          <p>Editor</p>
+        </div>
+          <div>
+            <h3>Contributors</h3>
+            <p>Kelly Wang</p>
+            <p>Sara Dehghani</p>
+          </div>
+      </div>
+
+      <h2>Project Description</h2>
+      <p class="info">
+        A short documentary created to support the Museum of Vancouver’s upcoming Vancouver Galleries redevelopment. The film captures community perspectives, highlights what visitors hope to see in the reimagined space, and contributes to MOV’s early engagement and storytelling efforts.
+      </p>
+
+      <video class="project-video" controls>
+        <source src="video/TracesofRed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <p>
+        Add additional context, extra images, or breakdown sections.  
+        This page is meant to expand and tell the full story behind your work.
+      </p>
+
+      <a href="index.html" class="back-btn">Back to Portfolio</a>
+    </div>
   </div>
+
+  <div id="cursor"></div>
 
 </body>
 </html>

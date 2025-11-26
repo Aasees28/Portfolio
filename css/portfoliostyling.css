@@ -160,6 +160,13 @@
       box-shadow: 0 0 0 #000;
     }
 
+    .projects-list h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+
     .about h2 {
       font-size: 32px;
       margin-bottom: 20px;
